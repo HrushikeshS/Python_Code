@@ -16,15 +16,12 @@ provider "aws" {
   region = var.main_Region
 }
 
-resource "aws_instance" "MyIncident3" {
+resource "aws_instance" "MyIncident" {
   ami           = "ami-0d54604676873b4ec"
-  instance_type = "t2.medium"
+  instance_type = "t3.micro"
 
   tags = {
-    Name = "MyInc"
+    Name = "MyIncident"
   }
 
-}
-output "aws_instance_private_ip" {
-    value = aws_instance.MyIncident.public_ip
 }
