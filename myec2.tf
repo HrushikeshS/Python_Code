@@ -16,9 +16,9 @@ provider "aws" {
   region = var.main_Region
 }
 
-resource "aws_instance" "MyIncidentNew" {
+resource "aws_instance" "MyIncident" {
   ami           = "ami-0d54604676873b4ec"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
   tags = {
     Name = "MyIncident"
