@@ -17,11 +17,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "MyIncidentNew" {
-  ami           = "ami-0d54604676873b4ec"
-  instance_type = "t2.micro"
+  ami           = "ami-00af95fa354fdb788"
+  instance_type = "t2.medium"
 
   tags = {
-    Name = "MyIncident"
+    Name = "MyIncidentNew"
   }
 
 }
