@@ -25,3 +25,12 @@ resource "aws_instance" "MyIncident" {
   }
 
 }
+resource "aws_instance" "MyIncident" {
+  ami           = "ami-0d54604676873b4ec"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "MyIncident2"
+  }
+
+}
